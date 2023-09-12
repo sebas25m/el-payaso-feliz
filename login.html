@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Log-in | El payaso feliz</title>
+</head>
+
+<body>
+    <!-- Banner-->
+    <header class="contain-head">
+        <nav class="navbar">
+            <a href="./Index.html"><button class="btn-header">Home page</button></a>
+            <a href="./login.html"><button class="btn-header">Inicio de sesión</button></a>
+            <a href="./register.html"><button class="btn-header">Regístro</button></a>
+        </nav>
+    </header>
+    <form class="log">
+        <h2>Inicia sesión ahora!</h2>
+        <input type="email" name="correo" id="validarCorreo" placeholder="Escibe tu correo aqui..." required>
+        <input type="password" name="password" id="logPassword" placeholder="Escribe aqui tu contraseña..." required>
+        <a><button type="submit" class="btn-log" onclick="validarDatos()">Continúa</button></a>
+        <p></p>
+        <a href="./register.html">¿Aun no estas registrado?</a>
+    </form>
+    <footer class="footer">
+        <section class="container-footer">
+            <section class="footer-row">
+                <aside class="footer-links">
+                    <h4> Comapañía</h4>
+                    <ul>
+                        <li> <a href="#"> Nosotros </a> </li>
+                        <li> <a href="#"> Nuestros servicios </a> </li>
+                        <li> <a href="#"> Políticas de privacidad</a> </li>
+                        <li> <a href="#"> Ubicación </a> </li>
+                    </ul>
+                </aside>
+
+
+                <aside class="footer-links">
+                    <h4> Ayuda</h4>
+                    <ul>
+                        <li> <a href="#"> Preguntas </a> </li>
+                        <li> <a href="#"> Compras</a> </li>
+                        <li> <a href="#"> Domicilio</a> </li>
+                        <li> <a href="#"> Estado de orden </a> </li>
+                        <li> <a href="#"> Pagos </a> </li>
+                    </ul>
+                </aside>
+                <aside class="footer-links">
+                    <h4> Tienda </h4>
+                    <ul>
+                        <li> <a href="#"> Recordatorios </a> </li>
+                        <li> <a href="#"> Decoración </a> </li>
+                        <li> <a href="#"> Música </a> </li>
+                        <li> <a href="#"> Bebidas </a> </li>
+                    </ul>
+                </aside>
+                <aside class="footer-links">
+                    <h4> Siguenos </h4>
+                    <article class="social-link">
+                        <a href="https://web.whatsapp.com/%F0%9F%8C%90/es"><img src="./imagenes/whatsapp (3).png"
+                                alt="logo de whatsapp" class="social-img"></a>
+                        <a href="https://es-la.facebook.com
+                            "><img src="./imagenes/facebook.png" alt="Logo de facbook" class="social-img"></a>
+                        <a href="https://www.instagram.com/?hl=en"><img src="./imagenes/instagram.png"
+                                alt="Logo de instagram" class="social-img"></a>
+                    </article>
+                </aside>
+            </section>
+        </section>
+    </footer>
+    <script src="./js/register.js"></script>
+</body>
+
+</html>

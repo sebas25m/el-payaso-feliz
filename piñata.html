@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piñatas | El payaso feliz</title>
+  <link rel="stylesheet" href="./css/piñata.css">
+  <link rel="stylesheet" href="./css/home.css" />
+</head>
+
+<body>
+  <!-- Banner-->
+  <header class="contain-head">
+    <nav class="navbar">
+      <a href="./Index.html"><button class="btn-header">Home page</button></a>
+      <a href="./login.html"><button class="btn-header">Inicio de sesión</button></a>
+      <a href="./register.html"><button class="btn-header">Regístro</button></a>
+    </nav>
+  </header>
+  <main class="container-form">
+    <form class="form">
+      <section class="informacion-necesaria">
+        <h2>La siguiente información es necesaria.</h2>
+        <h4>¿Cuántos niñ@s desea invitar?</h4>
+        <p>Recuerda que por cada niño se esperan dos acompañantes adultos.</p>
+        <input type="number" id="cantNiñas" class="piñata" placeholder="Niños inv">
+        <input type="number" id="cantNiños" class="piñata" placeholder="Niñas inv">
+
+        <h4>Selecciona el sitio en que piensas hacer la reunión. </h4>
+        <ul>
+          <li>Tipo A: Salon de gran categoria. <br>Precio: $2'500.000 mínimo 5 horas, más $250.000 cada hora adicional.
+          </li>
+          <li>Tipo B: Salon de categoria media. <br>Precio: $1'800.000 mínimo 3 horas, más $175.000 cada hora adicional.
+          </li>
+          <li>Tipo C: El homanejeado presta su hogar. <br>Precio: Gratis.</li>
+        </ul>
+        <select name="sitiofest" id="sitio"></select>
+        <h4>¿Cuantas horas quieres que dure la fiesta?</h4>
+        <select name="duracion" id="duracionHora"></select>
+      </section>
+      <section class="info-opcional">
+        <h2>La siguiente información es opcional.</h2>
+        <h4>Servicio de comida.</h4>
+        <ul>
+          <li>Buffet: $17.500 cada persona</li>
+          <li>Plato especial: $13.500 cada persona</li>
+          <li>Plato económico: $11.000 cada persona</li>
+          <li>Comida formal: $8.500 cada persona</li>
+          <li>Típica colombiana: $14.950 cada persona</li>
+          <li>Combo andino: $28.000 cada dos personas</li>
+        </ul>
+        <select name="servComida" id="servcomida"></select>
+        <h4>Servicio de recordatorios.</h4>
+        <p>Recuerda que cobramos 3.500 niño c/u, 5.500 niña c/u y por adulto 2.500 c/u</p>
+        <!-- Si y no -->
+        <input type="radio" name="recordatorio" class="recordatorio" checked value="1">
+        <p>Si</p>
+        <input type="radio" name="recordatorio" class="recordatorio" value="0">
+        <p>No</p>
+        <h4>Servicio de decoración.</h4>
+        <p>Se cobra dependiendo de el lugar donde desees hacer el evento.</p>
+        <ul>
+          <li>Para el salon tipo A: $200.000</li>
+          <li>Para el salon tipo B: $125.000</li>
+          <li>Para el salon tipo C: $300.000</li>
+        </ul>
+        <!-- si y no -->
+        <input type="radio" name="decoracion" class="decoracion" checked value="1">
+        <p>Si</p>
+        <input type="radio" name="decoracion" class="decoracion" value="0">
+        <p>No</p>
+        <h4>Servicio de recreación.</h4>
+        <ul>
+          <li>Niños: $250.000 cada hora</li>
+          <li>Adultos: $180.000 cada hora</li>
+        </ul>
+        <select name="servRecreacion" id="servrecreacion"></select>
+        <h4>Servicio de musica en vivo.</h4>
+        <ul>
+          <li>Para salon tipo A: $950.000 tres horas (horas adicionales $250.000 c/u)</li>
+          <li>Para salon tipo B: $650.000 cuatro horas (horas adicionales $125.000 c/u)</li>
+          <li>Para salon tipo C: $300.000 cada hora</li>
+        </ul>
+        <!-- si y no -->
+        <input type="radio" name="musica" class="musica" checked value="1">
+        <p>Si</p>
+        <input type="radio" name="musica" class="musica" value="0">
+        <p>No</p>
+        <h4>Servicio de refrigerios.</h4>
+        <p>Precios: </p>
+        <ul>
+          <li>Niñ@s: $8.500</li>
+          <li>Adultos: $10.000</li>
+        </ul>
+        <!-- Si y no -->
+        <input type="radio" name="refrigerio" class="refrigerio" checked value="1">
+        <p>Si</p>
+        <input type="radio" name="refrigerio" class="refrigerio" value="0">
+        <p>No</p>
+        <h4>Servicio de bebidas.</h4>
+        <p>Precios: (Barra libre)</p>
+        <ul>
+          <li>Niñ@: $4.450</li>
+          <li>Adulto: $15.750</li>
+        </ul>
+        <!-- si y no -->
+        <input type="radio" name="bebida" class="bebida" checked value="1">
+        <p>Si</p>
+        <input type="radio" name="bebida" class="bebida" value="0">
+        <p>No</p>
+        <h4>Servicio de meseros.</h4>
+        <p>Ten en cuenta lo siguiente:</p>
+        <ul>
+          <li>Por cada 30 invitados, 5 meseros que cobran $20.000 c/u por hora.</li>
+          <li>Por cada 100 invitados, 2 meseros adicionales que cobran $18.000 c/u por hora.</li>
+        </ul>
+        <!-- si y no -->
+        <input type="radio" name="meseros" class="meseros" checked value="1">
+        <p>Si</p>
+        <input type="radio" name="meseros" class="meseros" value="0">
+        <p>No</p>
+        <h4>Espectáculos artísticos.</h4>
+        <p>Existen los siguientes shows disponibles: </p>
+        <ul>
+          <li>Musical infantil Allegri ma non troppo: $500.000</li>
+          <li>Musical infantil Allegri molto: $1'000.000</li>
+          <li>Musical infantil Allegri assai: $1'500.000</li>
+        </ul>
+        <select name="showsArt" id="shows"></select>
+        <h4>Impresión de las invitaciones.</h4>
+        <p>Precio: $1500 por niño.</p>
+        <!-- Si y no -->
+        <input type="radio" name="invitacion" class="invitacion" checked value="1">
+        <p>Si</p>
+        <input type="radio" name="invitacion" class="invitacion" value="0">
+        <p>No</p>
+        <h4>Divulgación. Precio: 2'000.000</h4>
+        <p>Podemos compartir la invitación a tu reunion.</p>
+        <ul>
+          <li>Cadenas radiales</li>
+          <li>Fotos</li>
+          <li>Videos</li>
+          <li>Redes sociales</li>
+        </ul>
+        <!-- si Y no -->
+        <input type="radio" name="divulgacion" class="divulgacion" checked value="1">
+        <p>Si</p>
+        <input type="radio" name="divulgacion" class="divulgacion" value="0">
+        <p>No</p>
+        <h4>Conductor elegido.</h4>
+        <p>Tarifa base: $150.000 <br>Zonas disponibles: (Estos costos adicionales se aplican a la tarifa base)</p>
+        <ul>
+          <li>Zona Norte-Oriente: aumento del 5%<input type="number" id="srv-znororiente" name="numero-servicios-ce"
+              class="cnd-elegido" class="piñata"></li>
+          <li>Zona Norte-Occidente: aumendo del 10% <input type="number" id="srv-znoroccidente"
+              name="numero-servicios-ce" class="cnd-elegido" class="piñata"></li>
+          <li>Zona Centro: No aumenta la tarifa <input type="number" id="srv-zcentro" name="numero-servicios-ce"
+              class="cnd-elegido" class="piñata"></li>
+          <li>Zona Sur-Oriente: aumento del 20%<input type="number" id="srv-zsuroriente" name="numero-servicios-ce"
+              class="cnd-elegido" class="piñata"></li>
+          <li>Zona Sur-Occidente: aumento del 15%<input type="number" id="srv-zsuroccidente" name="numero-servicios-ce"
+              class="cnd-elegido" class="piñata"></li>
+          <li>Zona Oriente: 5% de descuento <input type="number" id="srv-zoriente" name="numero-servicios-ce"
+              class="cnd-elegido" class="piñata"></li>
+          <li>Zona Occidente: No altera el valor de la tarifa<input type="number" id="srv-zoccidente"
+              name="numero-servicios-ce" class="cnd-elegido" class="piñata"></li>
+        </ul>
+        <h4>Medios de pago.</h4>
+        <p>Los siguientes cambios son aplicados al precio total de la cotización</p>
+        <ul>
+          <li>Tarjeta débito: aumento del 7.5%</li>
+          <li>Tarjeta crédito: aumento del 12.5%</li>
+          <li>Cheque al dia: aumento del 5%</li>
+          <li>Cheque post-fechado: aumento del 18.5%</li>
+          <li>Efectivo: 10% de descuento</li>
+          <li>Bono corporativo: aumento del 15%</li>
+        </ul>
+        <select name="Medios_pago" id="mediospago"></select>
+      </section>
+    </form>
+    <button id="calcularBoton" onclick="mostrarCotizacion()">Mostrar Cotización</button>
+    <p id="mostrardatos"></p>
+  </main>
+  <footer class="footer">
+    <section class="container-footer">
+      <section class="footer-row">
+        <aside class="footer-links">
+          <h4> Comapañía</h4>
+          <ul>
+            <li> <a href="#"> Nosotros </a> </li>
+            <li> <a href="#"> Nuestros servicios </a> </li>
+            <li> <a href="#"> Políticas de privacidad</a> </li>
+            <li> <a href="#"> Ubicación </a> </li>
+          </ul>
+        </aside>
+        <aside class="footer-links">
+          <h4> Ayuda</h4>
+          <ul>
+            <li> <a href="#"> Preguntas </a> </li>
+            <li> <a href="#"> Compras</a> </li>
+            <li> <a href="#"> Domicilio</a> </li>
+            <li> <a href="#"> Estado de orden </a> </li>
+            <li> <a href="#"> Pagos </a> </li>
+          </ul>
+        </aside>
+        <aside class="footer-links">
+          <h4> Tienda </h4>
+          <ul>
+            <li> <a href="#"> Recordatorios </a> </li>
+            <li> <a href="#"> Decoración </a> </li>
+            <li> <a href="#"> Música </a> </li>
+            <li> <a href="#"> Bebidas </a> </li>
+          </ul>
+        </aside>
+        <aside class="footer-links">
+          <h4> Siguenos </h4>
+          <article class="social-link">
+            <a href="#"><img src="./imagenes/whatsapp (3).png" alt="logo de whatsapp" class="social-img"></a>
+            <a href="#"><img src="./imagenes/facebook.png" alt="Logo de facbook" class="social-img"></a>
+            <a href="#"><img src="./imagenes/instagram.png" alt="Logo de instagram" class="social-img"></a>
+          </article>
+        </aside>
+      </section>
+    </section>
+  </footer>
+  <script src="./js/Piñata.js"></script>
+</body>
+
+</html>
